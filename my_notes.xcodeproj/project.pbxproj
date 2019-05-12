@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5861C72C227DCB0A00998B6F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861C72B227DCB0A00998B6F /* EditViewController.swift */; };
 		58D060502278C1530039B61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0604F2278C1530039B61A /* AppDelegate.swift */; };
-		58D060522278C1530039B61A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D060512278C1530039B61A /* ViewController.swift */; };
 		58D060552278C1530039B61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D060532278C1530039B61A /* Main.storyboard */; };
 		58D060572278C1550039B61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D060562278C1550039B61A /* Assets.xcassets */; };
 		58D0605A2278C1550039B61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D060582278C1550039B61A /* LaunchScreen.storyboard */; };
+		58F2D489227AF36000C98430 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2D488227AF36000C98430 /* NotesTableViewController.swift */; };
 		FD9E4EAD34EA1F681EF5EEAA /* Pods_my_notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E76D9B5A301F83CD3B1986 /* Pods_my_notes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5861C72B227DCB0A00998B6F /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		58D0604C2278C1530039B61A /* my_notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D0604F2278C1530039B61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58D060512278C1530039B61A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58D060542278C1530039B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D060562278C1550039B61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D060592278C1550039B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D0605B2278C1550039B61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F2D488227AF36000C98430 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		5F90DF214E5AC46FAFBEC7FD /* Pods-my_notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my_notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-my_notes/Pods-my_notes.release.xcconfig"; sourceTree = "<group>"; };
 		66E76D9B5A301F83CD3B1986 /* Pods_my_notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3CEFE73BA464B22B8DE98E /* Pods-my_notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my_notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-my_notes/Pods-my_notes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +42,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58AB136522799E03007B9078 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58AB136622799E1A007B9078 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58F2D488227AF36000C98430 /* NotesTableViewController.swift */,
+				5861C72B227DCB0A00998B6F /* EditViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		58AB136722799E36007B9078 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				58D060532278C1530039B61A /* Main.storyboard */,
+				58D060582278C1550039B61A /* LaunchScreen.storyboard */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
 		58D060432278C1520039B61A = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +88,11 @@
 		58D0604E2278C1530039B61A /* my_notes */ = {
 			isa = PBXGroup;
 			children = (
+				58AB136522799E03007B9078 /* Models */,
+				58AB136622799E1A007B9078 /* View Controllers */,
+				58AB136722799E36007B9078 /* VIews */,
 				58D0604F2278C1530039B61A /* AppDelegate.swift */,
-				58D060512278C1530039B61A /* ViewController.swift */,
-				58D060532278C1530039B61A /* Main.storyboard */,
 				58D060562278C1550039B61A /* Assets.xcassets */,
-				58D060582278C1550039B61A /* LaunchScreen.storyboard */,
 				58D0605B2278C1550039B61A /* Info.plist */,
 			);
 			path = my_notes;
@@ -202,8 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D060522278C1530039B61A /* ViewController.swift in Sources */,
+				5861C72C227DCB0A00998B6F /* EditViewController.swift in Sources */,
 				58D060502278C1530039B61A /* AppDelegate.swift in Sources */,
+				58F2D489227AF36000C98430 /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +382,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = my_notes/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.angelinafriz.my-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -371,7 +402,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = my_notes/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.angelinafriz.my-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
